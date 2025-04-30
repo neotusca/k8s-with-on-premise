@@ -1,2 +1,2 @@
-# install container runtime interface
-apt install containerd -y
+# install container runtime interface (v1.7.24)
+sudo apt install containerd -y

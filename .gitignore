@@ -1,0 +1,5 @@
+
+master-node/join-worker-node.sh
+master-node/previous/
+master-node/*.log
+master-node/*.err
