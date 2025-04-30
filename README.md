@@ -2,18 +2,20 @@
 
 
 # Directory Structure & Description
+```
 .
 ├── common-node                     - apply on master-node & worker-node
 │   ├── 00.install-cri.sh            - install container-runtime-interface (containerd)
 │   ├── 01.install-kubeutil.sh       - install k8s-utils (kubeadm, kubectl, kubelet)
 │   ├── 02.config-cgroupdriver.sh    - configure cgroup-driver (based on Ubuntu 22.04)
-│   └── 03.config-etc.sh             - confiugre enable ip-forward (system parameter)
+│   └── 03.config-etc.sh             - configure enable ip-forward (system parameter)
 ├── master-node                     - apply on master-node only
 │   ├── 04.install-kubernetes.sh     - install kubernetes (by kubeadm)
 │   ├── 05.config-kubectl.sh         - configure kube-config
 │   ├── 11.install-calico-cni.sh     - install container-network-interface (calico)
 │   └── 21.install-k8sutil.sh        - install kubernetes-tools (k9s, helm and Option etc)
 └── README.md
+```
 
 # Pre-requirement
 - Node >= 2 (master & worker)
